@@ -1,0 +1,94 @@
+/**importing fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+@font-face {
+    font-family: "HiguenSerif" ;
+    src: url(fonts/higuen/HiguenSerif.otf);
+}
+@keyframes baseline {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+/**Styling the page**/
+body{
+    background-color: #d6c9c4;
+    text-align: center;
+    margin: 1%;
+}
+h1{
+    color: #41281a;
+    font-size: 350%;
+    font-family: "HiguenSerif" ;
+    letter-spacing: 5px;
+    padding-bottom: 12px;
+    padding-top: 5%;
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+}
+img{
+    height: 400px;
+    padding-inline: 30px;
+    padding-bottom: 20px;
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+}
+img:hover{
+    border: 2px solid #41281a;
+    padding: 0;
+  }
+
+.imagescontainer{
+    display: inline-block; 
+}
+
+#bigimg{
+    height: 500px;
+    width: 500px;
+}
+/**styling navigation**/
+nav{
+  z-index: 1;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#d6c9c4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #41281a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Lustria', serif;;
+}
+
+li a:hover:not(.active) {
+  background-color:#65412b;
+  color: #d6c9c4;
+}
+  /**giving animation to the svg image**/
+  svg{
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+  }
+/**styling icon**/
+  .icon3 {
+    margin-left: 78% ;
+    margin-top: 1%;
+   margin-bottom: -15%;
+   }
+   
+  
+   .icon2 {
+     margin-top: 1%;
+     margin-right: 78%;
+    margin-bottom: -14%;
+    }
+    

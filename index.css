@@ -1,0 +1,111 @@
+
+/**importing fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+@font-face {
+    font-family: "HiguenSerif" ;
+    src: url(fonts/higuen/HiguenSerif.otf);
+}
+
+@font-face {
+    font-family:"Scandiloverscript" ;
+    src: url(fonts/scandilover-script-font/Scandiloverscript-8BlD.ttf);
+}
+body {
+  cursor: pointer;
+}
+/**Styling the page**/
+body{
+    background-color: #d6c9c4;
+    background-image: url(indexbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+/**styling heading**/
+.hadha{
+    color: #65412b;
+    font-family:"Scandiloverscript" ;
+    font-size: 250%;
+    margin-left: 3%;
+    margin-bottom :-72px; 
+}
+.boutique{
+    color: #41281a;
+    font-family: "HiguenSerif" ;
+    font-size: 350%;
+    letter-spacing: 5px;
+    margin-left: 3%;
+}
+
+h1 {
+    position: relative;
+    top: 19pc;
+    left: 2.1pc;
+  }
+
+  #h1margin{
+    padding-bottom: -45pc;
+  }
+
+h1.text {
+    display: inline-block;
+    animation: baseline 0.5s forwards cubic-bezier(.4,0,.39,1.04);
+  }
+  
+
+/**styling navigation**/
+nav{
+  z-index: 1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#d6c9c4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #41281a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lustria', serif;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:#65412b;
+    color: #d6c9c4;
+  }
+  
+
+  /**Adding animation**/
+.hadha{
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+  }
+  .boutique{
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+  }
+ 
+  @keyframes baseline {
+    0% { transform: translateY(140%); }
+    100% { transform: translateY(0); }
+  }
+  
+  body { 
+    transition: opacity .5s;
+ }
+
+img{
+  width: 100%;
+  margin-left: -35%;
+  margin-right: -30%;
+  margin-bottom: -45%;
+}

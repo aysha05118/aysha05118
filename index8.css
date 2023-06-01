@@ -1,0 +1,129 @@
+/**importing fonts**/
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+@font-face {
+    font-family: "HiguenSerif" ;
+    src: url(fonts/higuen/HiguenSerif.otf);
+}
+@keyframes baseline {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+/**Styling the page**/
+section{
+    background-color: #d6c9c4;
+    text-align: center;
+    border: 2px solid #9b7750;
+    margin: 1.5%;
+    padding: 2%;
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+   
+}
+p{
+    font-size: 150%;
+    color: #65412B;
+    font-weight: 100;
+    font-family: 'Lustria', serif;
+    letter-spacing: 5px;
+}
+h1{
+    font-size: 350%;
+    color: #65412B;
+    font-family: "HiguenSerif" ;
+    letter-spacing: 5px;
+}
+/**styling navigation**/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#d6c9c4;
+  position: fixed;
+  top: 0;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #41281a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Lustria', serif;;
+}
+
+li a:hover:not(.active) {
+  background-color:#65412b;
+  color: #d6c9c4;
+}
+
+  
+/**styling footer**/
+  footer {
+    background-color: #41281A;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #d6c9c4;
+    margin-left: 150px;
+  }
+  
+  .footer-column {
+    width: 30%;
+    margin-bottom: 20px;
+    color: #d6c9c4;
+  }
+  
+  .footer-column h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .footer-column p {
+    margin-bottom: 5px;
+    color: #d6c9c4;
+    font-size: 15px;
+    text-align: left;
+    margin-right: 100px;
+    letter-spacing: 0px;
+  }
+  
+  .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #d6c9c4;
+  }
+  
+  .social-media li {
+    margin-right: 10px;
+  }
+  
+  .social-media li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media a {
+    color: #d6c9c4;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #d6c9c4;
+    letter-spacing: 0px;
+  }
